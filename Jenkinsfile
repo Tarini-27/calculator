@@ -1,4 +1,4 @@
-pipeline{
+pipeline {
   agent any;
   tools {
     nodejs 'jenkins-nodejs'
@@ -13,9 +13,8 @@ pipeline{
     
     stage('Unit tests') {
       steps {
-          npm run test --coverage --watchAll=false
-          return null
-      }
+          npm run test -- --watchAll=false
+            }
     }
     
     stage('Build') {
