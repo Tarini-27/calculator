@@ -13,7 +13,7 @@ pipeline {
     
     stage('Unit tests') {
       steps {
-          npm run test --watchAll=false
+          npm run test -- --watchAll=false
             }
     }
     
