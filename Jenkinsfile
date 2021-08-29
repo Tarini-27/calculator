@@ -8,7 +8,7 @@ pipeline {
     stage('Initialize') {
       steps {
           npm install
-      }
+            } 
     }
     
     stage('Unit tests') {
@@ -20,7 +20,7 @@ pipeline {
     stage('Build') {
       steps {
           npm run build
-      }
+            }
     }
   }
 }
