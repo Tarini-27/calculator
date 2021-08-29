@@ -7,25 +7,25 @@ pipeline {
     
     stage('Initialize') {
       steps {
-          sh * * *
+          sh ***
             npm install
-          * * *
+          ***
             } 
     }
     
     stage('Unit tests') {
       steps {
-          sh * * *
+          sh ***
             npm run test -- --watchAll=false
-          * * *
+          ***
             }
     }
     
     stage('Build') {
       steps {
-          sh * * *
+          sh ***
             npm run build
-          * * *
+          ***
             }
     }
   }
