@@ -14,6 +14,7 @@ pipeline{
     stage('Unit tests') {
       steps {
           npm run test -- --watchAll=false
+          return null
       }
     }
     
