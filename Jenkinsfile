@@ -1,5 +1,5 @@
 pipeline {
-  agent any;
+  agent any
   tools {
     nodejs 'jenkins-nodejs'
   }
@@ -7,20 +7,26 @@ pipeline {
     
     stage('Initialize') {
       steps {
-           npm install
-            } 
+          sh ***
+            npm install
+          ***
+      } 
     }
     
     stage('Unit tests') {
       steps {
+          sh ***
             npm run test -- --watchAll=false
-            }
+          ***
+      }
     }
     
     stage('Build') {
       steps {
+          sh ***
            npm run build
-            }
+          ***
+      }
     }
   }
 }
