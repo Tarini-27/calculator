@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     tools {
-        nodejs 'node-tool'
+        nodejs 'jenkins-nodejs'
     }
 
     stages {
